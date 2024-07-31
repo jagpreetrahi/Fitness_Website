@@ -1,0 +1,242 @@
+body{
+     display: flex;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     animation: changeColor 3s infinite alternate;
+    
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 100%;
+    height: 2px; 
+    background-color: lightpink; 
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+
+#welcome-text{
+    opacity: 1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+    
+
+    
+    .welcome-content{
+        
+        text-align: left;
+        position: absolute;
+        top: 17%;
+        left: 2%;
+       display: flex;
+        margin-right: 27%;
+        font-size: xx-large;
+        text-align: center;
+        font-family: Arial,  sans-serif;
+    }
+    
+        
+    
+   .card-container{
+    
+         width: 200px;
+       
+    
+         margin: 0 auto;
+     }
+
+     .image-container{
+        display: flex;
+        margin-right: 40px;
+      }
+
+     img {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    
+
+     .Cut-img{
+        width: 100%;
+        height: 130%;
+        background-size: cover;
+        position: absolute;
+       mix-blend-mode: multiply;
+      }
+
+
+       
+
+
+        
+
+
+        
+
+
+     
+    
+  
+   
+   
+
+
+   
+    
+    .card-overlap {
+      
+        position: absolute;
+         top: 357px;
+         background: linear-gradient(to bottom , rgb(148, 238, 64) , rgb(252, 147, 217));
+
+        left: 320px;
+        transform: translate(50%, 50%);
+        width: 200px;
+        height: 200px;
+        color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-top: 50%;
+     
+    }
+
+    .overlap{
+     
+        top: 566px;
+        left:100px ;
+        background: linear-gradient(to bottom , rgb(252, 147, 217) ,  rgba(128, 128, 128, 0.966));
+        position: absolute;
+        transform: translate(50% , 50%);
+        width: 200px;
+        height: 200px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        color: white;
+
+    }
+
+    .over{
+        
+        top: 810px;
+        left: 320px;
+        background: linear-gradient(to bottom , rgb(128, 128, 128, 0.966) ,  coral);
+        position: absolute;
+        transform: translate(50%,50%);
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
+        color: white;
+    }
+
+   
+
+    .card-title {
+        text-align: center;
+
+      }
+      
+      .card-content {
+        text-align: center;
+        font-size: 17px;
+        animation: increaseSize 2s  alternate;
+        top: 5px;
+        order: 2;
+      }
+
+
+      @keyframes increaseSize{
+        from {
+            font-size: 11px; /* Initial size */
+        }
+         to {
+            font-size: 19px; /* Final size */
+        }
+      }
+      
+      .card h2 {
+        margin: 0;
+        font-family: Arial,  sans-serif;
+      }
+
+      @keyframes changeColor {
+        from {
+          background-color: lightgray; /* Initial background color */
+        }
+        to {
+          background-color: gray; /* Final background color */
+        }
+      }
+
+
+
+      .card {
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        transform: translate(50% , 50%);
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(to bottom , rgb(230, 120, 230) , rgb(148, 238, 64));
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        color: white;
+        opacity: 1;
+        
+      }
+
+
+
+
+      
+
+
+      
+
+
+
+      
+   
+
+
+
+
+
+
